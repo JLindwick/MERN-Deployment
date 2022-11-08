@@ -13,7 +13,7 @@ export default () => {
     //handler when the form is submitted
 
     const onSubmitHandler = () => {
-        axios.get('http://localhost:8000/users')
+        axios.get('http://localhost/users')
             .then(res=> {
                 for(var i = 0;i<res.data.length;i++){
                    if(res.data[i].email === email){

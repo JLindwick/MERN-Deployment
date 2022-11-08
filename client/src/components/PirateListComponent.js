@@ -13,7 +13,7 @@ const PirateList = (props) => {
     }
 
     const deletePirate = (pirateId) => {
-        axios.delete('http://localhost:8000/pirate/' + pirateId)
+        axios.delete('http://localhost/pirate/' + pirateId)
             .then(res => {
                 removeFromDom(pirateId)
             })
