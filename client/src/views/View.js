@@ -8,7 +8,7 @@ const View = (props) => {
     const [loaded, setLoaded] = useState(false);
     const {id} = useParams();
     useEffect(()=>{
-        axios.get('http://localhost:8000/pirate/' + id)
+        axios.get('http://127.0.0.1:8000/pirate/' + id)
             .then(res=>{
                 setPirates(res.data);
                 setLoaded(true);
