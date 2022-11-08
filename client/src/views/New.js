@@ -7,7 +7,7 @@ const Main = (props) => {
     const [loaded, setLoaded] = useState(false);
 
     useEffect(()=>{
-        axios.get('http://localhost/pirate')
+        axios.get('http://localhost:8000/pirate')
             .then(res=>{
                 setPirates(res.data);
                 setLoaded(true);

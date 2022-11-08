@@ -21,7 +21,7 @@ export default () => {
         //prevent default behavior of the submit
         //make a post request to create a new person
 
-        axios.post('http://localhost/pirate', {
+        axios.post('http://localhost:8000/pirate', {
             name,
             url,
             numberOfChest,
