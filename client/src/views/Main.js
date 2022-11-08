@@ -12,7 +12,7 @@ const Main = (props) => {
         setPirates(pirates.filter(pirate => pirate._id != piretId));
     }
     useEffect(()=>{
-        axios.get('/pirate')
+        axios.get('http://localhost:8000/pirate')
             .then(res=>{
                 setPirates(res.data);
                 setLoaded(true);
