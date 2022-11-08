@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://http://54.244.153.155/crmdb", {
+mongoose.connect("mongodb://54.244.153.155/crmdb", {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 })
